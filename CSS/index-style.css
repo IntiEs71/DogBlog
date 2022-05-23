@@ -40,10 +40,9 @@
     padding: 3%;
 }
 
-@media(max-width:499px){
+@media(min-width:0px){
     img{
-       width: auto; 
-       height: 80px;
+       width: 70px;
     }
 }
 
