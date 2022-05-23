@@ -1,0 +1,19 @@
+/**
+    Main CSS File that contains the other CSS files
+*/
+@import "../CSS/about-style.css";
+@import "../CSS/blog-style.css";
+@import "../CSS/index-style.css";
+
+body { 
+    font: 12px Helvetica, Sans-Serif;
+    line-height: 24px;
+    background-color: rgb(255, 255, 255); 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}

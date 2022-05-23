@@ -1,0 +1,75 @@
+h3 {
+    text-align: center;
+    color: rgb(3, 3, 104);
+}
+
+/* smaller screen */
+@media(max-width:699px){
+    .container2 {
+        background-color: rgba(109, 136, 218, 0.722);
+        /* Display Grid */
+        display: grid;
+        margin: auto;
+        margin-top: 20px;
+        /* Set up rows and columns */
+        grid-template-columns: 70px repeat(6, 1fr);
+        grid-template-rows: 70px 1000px 50px 1fr;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "side main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+}
+
+/* larger */
+@media(min-width:700px){
+    .container2 {
+        background-color: rgba(109, 136, 218, 0.722);
+        /* Display Grid */
+        display: grid;
+        margin: auto;
+        margin-top: 20px;
+        /* Set up rows and columns */
+        grid-template-columns: 70px repeat(6, 1fr);
+        grid-template-rows: 70px 850px 50px 1fr;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "side main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+}
+
+
+.box {
+    border: 1px solid black;
+}
+
+.header {
+    grid-area: hd;
+    background-color: darkblue;
+    color:rgb(231, 223, 223);
+    padding-left: 2%;
+}
+
+.side {
+    grid-area: side;
+    /* Display Flex */
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    color: white;
+    background-color: rgb(143, 180, 214);
+}
+
+.content {
+    grid-area: main;
+    font-size: 135%;
+    padding: 3%;
+}
+
+.footer {
+    font-size: 130%;
+    grid-area: ft;
+    background-color: rgb(173, 173, 173);
+    padding-left: 1%;
+}
