@@ -13,6 +13,8 @@
     "ft ft ft ft ft ft ft ft";
 }
 
+
+
 .box {
     border: 1px solid black;
 }
@@ -42,25 +44,20 @@
 
 @media(min-width:0px){
     img{
-       width: 70px;
+        width: auto;
+       height: 80px;
+       object-fit:contain;
     }
 }
 
-@media(max-width:699px){
-    img{
-       width: auto; 
-       height: 110px;
-    }
-}
-
-@media(min-width:700px){
+@media(min-width:1000px){
     img{
        width: auto; 
        height: 130px;
     }
 }
 
-@media(min-width:890px){
+@media(min-width:1300px){
     img{
        width: auto; 
        height: 150px;
