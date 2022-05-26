@@ -45,12 +45,26 @@
 @media(min-width:0px){
     img{
         width: auto;
-       height: 80px;
-       object-fit:contain;
+       height: 30px;
     }
 }
 
-@media(min-width:1000px){
+@media(min-width:300px){
+    img{
+        width: auto;
+       height: 50px;
+    }
+}
+
+@media(min-width:450px){
+    img{
+       width: auto; 
+       height: 100px;
+    }
+}
+
+
+@media(min-width:700px){
     img{
        width: auto; 
        height: 130px;
